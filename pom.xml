@@ -26,10 +26,8 @@
       <scope>test</scope>
     </dependency>
   </dependencies>
-
-  <build>
-    
-    <distributionManagement>
+  
+  <distributionManagement>
 
       <repository>
           <id>releases</id>
@@ -43,7 +41,8 @@
           <url>http://192.168.1.89:8080/job/HelloWorld/</url>
       </snapshotRepository>
     </distributionManagement>
-    
+
+  <build>
     <pluginManagement><!-- lock down plugins versions to avoid using Maven defaults (may be moved to parent pom) -->
       <plugins>
         <!-- clean lifecycle, see https://maven.apache.org/ref/current/maven-core/lifecycles.html#clean_Lifecycle -->
