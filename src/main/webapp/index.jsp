@@ -5,7 +5,7 @@
     <title>JSP - Hello World</title>
 </head>
 <body>
-<h1><%= "Hola tsoft 2022 test 2" %>
+<h1><%= "prueba para sonar" %>
 </h1>
 <br/>
 <!-- <a href="hello-servlet">Hola tsoft</a> -->
