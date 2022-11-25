@@ -1,12 +1,15 @@
 pipeline{
-	stage{
-		stage('Build'){
-			steps {
-	      mvn sonar:sonar \
-	      -Dsonar.projectKey=jenkins \
-	      -Dsonar.host.url=http://localhost:9000 \
-	      -Dsonar.login=0bb545843b3f687329aa96d0139f659be6793fb3
-	    }
-	  }
+	agent {label 'linux'}
+	options {
+		buildDiscarder(logRotator(numToKeepStr: '5'))
 	}
+	stages{
+		stage('Scan'){
+			steps{
+				withSonarQubeEnv(installationName: 'sq1' {
+					sh '.mvnw clean org.sonarsource.scanner.maven:sonar-maven-plugin:3.9.0.2155:sonar'
+				}
+		 	}
+		 }
+	 }
 }
