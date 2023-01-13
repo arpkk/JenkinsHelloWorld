@@ -5,7 +5,7 @@
     <title>JSP - Hello World</title>
 </head>
 <body>
-<h1><%= "prueba de integracion continua con despliegue" %>
+<h1><%= "prueba de integracion continua con despliegue y commit" %>
 </h1>
 <br/>
 <!-- <a href="hello-servlet">Hola tsoft</a> -->
