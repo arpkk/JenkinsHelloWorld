@@ -40,11 +40,11 @@ pipeline {
     }
     stage('Deploy to Tomcat') {
       steps {
-        script {
+       script {
           def tomcatUrl = 'http://45.79.52.71:8082/manager/text'
           def warFile = 'HelloWorld-1.0-SNAPSHOT'
-          def tomcatUser = 'admin'
-          def tomcatPassword = 'admin'
+          def tomcatUser = 'robot'
+          def tomcatPassword = 'robot'
 
           def response = httpRequest(
             url: "${tomcatUrl}/deploy?path=/my-app&update=true",
@@ -52,9 +52,6 @@ pipeline {
             authentication: "${tomcatUser}:${tomcatPassword}",
             uploadFilePath: "${warFile}"
           )
-
-          println("Tomcat response status: ${response.status}")
-          println("Tomcat response content: ${response.content}")
         }
       }
     }
