@@ -2,12 +2,11 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>JSP - Hello World</title>
+    <title>Hello Servlet Example</title>
 </head>
 <body>
-<h1><%= "prueba de integracion continua con despliegue y commit con vault" %>
-</h1>
-<br/>
-<!-- <a href="hello-servlet">Hola tsoft</a> -->
+    <h1>Hello Servlet Example</h1>
+    <p>Haga clic en el siguiente enlace para ejecutar el servlet:</p>
+    <a href="${pageContext.request.contextPath}/hello-servlet">Ejecutar Servlet</a>
 </body>
 </html>
