@@ -8,6 +8,6 @@
 <h1><%= "prueba de integracion continua con despliegue y commit con vault prueba desde jenkins docker" %>
 </h1>
 <br/>
-<!-- <a href="hello-servlet">Hola tsoft</a> -->
+ <a href="hello-servlet">Hola tsoft</a>
 </body>
 </html>
