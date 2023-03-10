@@ -10,6 +10,6 @@
     </h2><%String username = application.getInitParameter("username");%><h2>
     El valor de miVariable es <%= username %>
 <br/>
- <a href="helloServlet">Hola tsoft</a>
+ <a href="HelloServlet">Hola tsoft</a>
 </body>
 </html>
