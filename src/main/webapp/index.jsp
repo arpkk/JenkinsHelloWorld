@@ -2,14 +2,12 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Hello World</title>
+    <title>JSP - Hello World</title>
 </head>
 <body>
-<h1><%= "prueba de integracion continua con despliegue y commit con vault prueba desde jenkins docker" %>
+<h1><%= "prueba de integracion continua con despliegue y commit" %>
 </h1>
-    <%String username = application.getInitParameter("username");%>
-    </h2><%= username %><h2>
 <br/>
- <a href="/hello-servlet">Hola tsoft</a>
+<!-- <a href="hello-servlet">Hola tsoft</a> -->
 </body>
 </html>
