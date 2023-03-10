@@ -7,6 +7,8 @@
 <body>
 <h1><%= "prueba de integracion continua con despliegue y commit con vault prueba desde jenkins docker" %>
 </h1>
+    </h2><%String username = application.getInitParameter("username");%><h2>
+    El valor de miVariable es <%= username %>
 <br/>
  <a href="hello-servlet">Hola tsoft</a>
 </body>
