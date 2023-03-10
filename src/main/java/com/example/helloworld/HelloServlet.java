@@ -4,24 +4,16 @@ import java.io.*;
 import javax.servlet.http.*;
 import javax.servlet.annotation.*;
 
-@WebServlet(name = "helloServlet", value = "/hello-servlet")
-public class HelloServlet extends HttpServlet {
-    private String message;
-
-    public void init() {
-        message = "Hola!";
-    }
-
-    public void doGet(HttpServletRequest request, HttpServletResponse response) throws IOException {
-        response.setContentType("text/html");
-
-        // Hello
-        PrintWriter out = response.getWriter();
-        out.println("<html><body>");
-        out.println("<h1>" + message + "</h1>");
-        out.println("</body></html>");
-    }
-
-    public void destroy() {
-    }
-}
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Imprimir valor de variable</title>
+</head>
+<body>
+	<h1>El valor de la variable "user" es:</h1>
+	<%
+	String miValor = application.getInitParameter("username");
+	%>
+	<p><%= miValor %></p>
+</body>
+</html>
