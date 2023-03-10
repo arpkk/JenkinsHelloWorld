@@ -5,6 +5,6 @@
     <title>Ejemplo de parámetro de aplicación</title>
 </head>
 <body>
-    <h1>Valor del parámetro: ${applicationScope.miParametro}</h1>
+    <h1>Valor del parámetro: ${applicationScope.username}</h1>
 </body>
 </html>
