@@ -1,19 +1,15 @@
-package com.example.helloworld;
-
-import java.io.*;
-import javax.servlet.http.*;
-import javax.servlet.annotation.*;
-
+<%@ page contentType="text/html; charset=UTF-8" pageEncoding="UTF-8" %>
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Imprimir valor de variable</title>
+    <title>Hello World</title>
 </head>
 <body>
-	<h1>El valor de la variable "user" es:</h1>
-	<%
-	String miValor = application.getInitParameter("username");
-	%>
-	<p><%= miValor %></p>
+<h1><%= "prueba de integracion continua con despliegue y commit con vault prueba desde jenkins docker" %>
+</h1>
+    <%String username = application.getInitParameter("username");%>
+    </h2><%= username %><h2>
+<br/>
+ <a href="/hello-servlet">Hola tsoft</a>
 </body>
 </html>
