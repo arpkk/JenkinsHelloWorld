@@ -2,11 +2,9 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Hello Servlet Example</title>
+    <title>Ejemplo de parámetro de aplicación</title>
 </head>
 <body>
-    <h1>Hello Servlet Example</h1>
-    <p>Haga clic en el siguiente enlace para ejecutar el servlet:</p>
-    <a href="${pageContext.request.contextPath}/hello-servlet">Ejecutar Servlet</a>
+    <h1>Valor del parámetro: ${applicationScope.miParametro}</h1>
 </body>
 </html>
